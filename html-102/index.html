@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 102</title>
+</head>
+<body>
+
+  <h1>HTML 102 - Mehr Basic Tags</h1>
+
+    <!-- Tabellen - Früher für Layout verwendet, heute nur für Darstellung von Daten!! -->
+  <!-- Werden nach Zeile für Zeile aufgebaut -->
+  <table>
+    <!-- tr für table row  -->
+    <tr>
+      <!-- td für table data -->
+      <td>Name</td>
+      <td>ABV</td>
+      <td>Schmeckt mir?</td>
+    </tr>
+    <tr>
+      <td>Mohren</td>
+      <td>5,6%</td>
+      <td>Ja</td>
+    </tr>
+    <tr>
+      <td>Fohren</td>
+      <td>5,2%</td>
+      <td>Meh</td>
+    </tr>
+    <tr>
+      <td>Frastanzer</td>
+      <td>5,2%</td>
+      <td>Passt</td>
+    </tr>
+    <tr>
+      <td>Heineken</td>
+      <td>0,1%</td>
+      <td>🤮</td>
+    </tr>
+  </table>
+
+  <!-- style für CSS -->
+  <style>
+    table, td {
+      border: 1px solid black;
+    }
+  </style>
+
+  <!-- hr für horizontal rule - Trennstrich -->
+  <hr>
+
+  <h2>Listen</h2>
+
+  <!-- ul für unordered list. Reihenfolge egal -->
+  <ul>
+    <!-- li für list item -->
+    <li>Aufzählung 1</li>
+    <li>Punkt 2</li>
+    <li>Und noch mehr...</li>
+  </ul>
+
+  <!-- ol für ordered list. Reihenfolge wichtig! -->
+  <ol>
+    <li>Schritt 1</li>
+    <li>Danach das</li>
+    <li>Am Schluss das</li>
+  </ol>
+
+  <!-- Kann Listen auch verschachteln -->
+  <ol>
+    <li>Brot</li>
+    <li>Chips</li>
+    <li>Bier
+      <ul>
+        <li>Mohren</li>
+        <li>Klenne</li>
+      </ul>
+    </li>
+    <li>Äpfel</li>
+  </ol>
+
+  <!-- Buttons können auch verschiedene 'States' wie disabled haben und können nicht angeklickt werden. -->
+  <button disabled>Darf nicht senden..</button>
+  
+  <h2>(Hyper)Links</h2>
+
+  <!-- a für anchor. href ist das Ziel des Links -->
+  <p>Link auf eine externe Seite</p>
+  <a href="https://www.google.com">Hier geht's zu Google!</a>
+
+  <p>Link in neuem Tab aufmachen (lieber nicht!)</p>
+  <a href="https://www.google.com" target="_blank">Hier geht's in einem neuen Tab zu Google!</a> 
+  
+  <p>Interner Link</p>
+  <a href="link.html">Interner Link (auf eigener Website)</a>
+  
+  <p>Link-Navigation</p>
+  <a href="../html-101/index.html">Zur Intro-Seite vom Montag</a>
+</body>
+</html>

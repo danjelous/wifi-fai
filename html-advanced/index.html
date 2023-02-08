@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Advanced Tags</title>
+</head>
+<body>
+  <h1>Mehr HTML-Tags</h1>
+
+  <!-- Video - vieles über Attribute konfigurierbar -->
+  <h2>'Eigener' Videoplayer</h2>
+  <video src="berge.mp4" width="600" controls autoplay muted loop></video>
+  
+  <!-- br für break line: Zeilenumbruch -->
+  <br>
+
+  <!-- Audio - Ähnlich wie video -->
+  <h2>'Eigener' Audioplayer </h2>
+  <audio src="easy-lifestyle.mp3" controls autoplay muted loop></audio>
+
+  <!-- figure für Bilder verwenden die eine Bildunterschrift (z.B. Fotocredit) brauchen -->
+  <!-- <figure>
+    <img src="../html-101/katze1.jpg" width="600" alt="Alt-Beschreibung die gut sein sollte!">
+    <figcaption>figcaption: Bildunterschrift die immer angezeigt wird.</figcaption>
+  </figure> -->
+
+  <!-- Mit picture kann ich je nach Bildschirmgröße andere Bilder anzeigen -->
+  <picture>
+    <source media="(min-width: 700px)" srcset="katze2.jpg">
+
+    <!-- Das unterste Bild (img) wird standardmäßig angezeigt -->
+    <img src="../html-101/katze1.jpg" width="200" alt="Alt-Beschreibung die gut sein sollte!">
+  </picture>
+
+  <!-- Nach Pause: Pfade und navigieren -->
+<!-- 
+
+  -- semantic tags
+  header
+  main
+  footer
+  article
+  nav
+  section
+  aside
+
+  formulare?
+ -->
+</body>
+</html>
