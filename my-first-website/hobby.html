@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobby's</title>
+</head>
+<body>
+  
+  <nav>
+    <a href="index.html">Startseite</a>
+    <a href="hobby.html">Hobby</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+
+  <main>
+    <h1>Hobbies</h1>
+
+    <p>Guate gschicht. Was schribt ma so übr hobbies wenn ma zwunga würd? Ischd as übrhaupt hobbies odr hobbys?</p>
+    <p>Wurscht. Do einfach a paar bildr, segand jo mehr als Worte 😇</p>
+
+    <section class="grid">
+      <figure>
+        <img src="images/bierbierbier.jpeg" alt="Einkaufswagen voller Bier.">
+        <figcaption>Bier war wieder in Aktion</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/onatrain.jpeg" alt="Mann der in keine Kinderzüge mehr passt.">
+        <figcaption>On a train</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/likeaboss.jpeg" alt="Katze Balu an der Bar." class="op-top">
+        <figcaption>Like a boss 🐱</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/wandra.jpeg" alt="Kleine Schnapsfalsche im Bregenzerwald.">
+        <figcaption>On tour</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/bunnahabhain.jpeg" alt="Junger Mann vor einem Steuerrad.">
+        <figcaption>Schottland '17. Long ago...</figcaption>
+      </figure>
+
+      <figure class="nsfw">
+        <img src="images/nsfw.jpeg" alt="Better not see">
+        <figcaption>NSFW</figcaption>
+      </figure>
+
+    </section>
+
+  </main>
+
+  <style>
+    img {
+      max-width: 100%;
+      height: 500px;
+      width: 500px;
+      object-fit: cover;
+      border-radius: 0.75rem;
+    }
+
+    .op-top {
+      object-position: top;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .nsfw {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .nsfw:hover {
+      opacity: 1;
+    }
+  </style>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Semantics</title>
+</head>
+<body>
+
+  <!-- Variante 1 : CSS direkt in HTML (weniger gut) -->
+  <style>
+    html {
+      background-color: aqua;
+      color: blueviolet;
+    }
+
+    header {
+      background-color: fuchsia;
+      color: darkmagenta;
+      text-align: center;
+      width: 80%;
+
+      /* padding: Innenabstand */
+      padding: 50px;
+
+      /* margin: Außenabstand */
+      margin: 50px;
+    }
+  </style>
+
+  <!-- nav für Navigation - kann überall vorkommen, nicht nur 'ganz oben'! -->
+  <nav>
+    <a href="">Link 1</a>
+    <a href="">Link 2</a>
+    <a href="">Link 3</a>
+  </nav>
+
+  <!-- header: 'Aufreißer' der Webseite, meist mit prominentem Bild/Video/Slider -->
+  <header>
+    <!-- nur eine h1 auf der Seite! Suchmaschinenoptimierung (SEO) -->
+    <h1>h1 - Meine wichtigste Überschrift!</h1>
+    <img src="" alt="Großes ansprechend Bild - der 'Hero'">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab reiciendis ad labore. Blanditiis officiis ducimus assumenda, harum at asperiores deleniti, voluptas quisquam ipsam, magnam provident. Repellendus doloremque perferendis laborum quam.</p>
+  </header>
+
+  <!-- main: Container für den Hauptinhalt der Seite -->
+  <main>
+    <!-- section: Teilabschnitt mit gewissem Inhalt -->
+    <section>
+      <h2>Neuer Blog-Beitrag 1!</h2>
+      <img src="" alt="Catchy Influenzer-Image 1">
+      <p>Bla bla bla</p>
+      <a href="">Mehr erfahren</a>
+    </section>
+
+    <section>
+      <h2>Neuer Blog-Beitrag 2!</h2>
+      <img src="" alt="Catchy Influenzer-Image 2">
+      <p>Bla bla bla</p>
+      <a href="">Mehr erfahren</a>
+    </section>
+
+    <section>
+      <h2>Neuer Blog-Beitrag 3!</h2>
+      <img src="" alt="Catchy Influenzer-Image 3">
+      <p>Bla bla bla</p>
+      <a href="">Mehr erfahren</a>
+    </section>
+
+    <!-- article für Artikel -->
+    <article>
+      <h2>Breaking News!</h2>
+      <p>Wi-Fi funktioniert wieder!</p>
+    </article>
+
+    <section>
+      <h2>Wie formatiere ich Text?</h2>
+
+      <p>Normaltext zum Vergleichen</p>
+
+      <strong>Für fettes strong verwenden!</strong><br>
+      <b>...und NICHT das b-Tag!</b><br>
+      <br>
+
+      <!-- em für emphasis -->
+      <em>Für kursives das em-Tag verwenden!</em><br>
+      <i>... und NICHT das i-Tag!</i><br>
+      <br>
+
+      <!-- u für ... underline -->
+      <u>Für unterstrichenes das u-Tag</u><br>
+      <br>
+
+      <p>Und <strong>das</strong> nun <em>alles</em> im <u>Fließtext</u>!</p>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="">Impressum</a>
+      <a href="">Datenschutz</a>
+      <a href="">Anfahrt</a>
+    </nav>
+  </footer>
+
+  <!-- Das hier nur damit es am Beamer nicht zusammengequetscht dargestellt wird -->
+  <style>
+    body {
+      padding-bottom: 200px;
+    }
+  </style>
+
+</body>
+</html>
