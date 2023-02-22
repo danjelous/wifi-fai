@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Intro</title>
+</head>
+<body>
+
+  <!-- 
+    Drei Varianten CSS einzubinden:
+      1. Inline
+      2. Internal
+      3. External
+
+      3 ist dabei zu bevorzugen da Wiederverwendbar und 
+        zentral verwaltbar.
+      1 und 2 sind für Ausnahmefälle geeignet wenn aus dem 
+        globalen Stylesheet (aus 3) etwas spezifisches geändert werden muss.
+   -->
+
+   <!-- Inline. Kann auch mehrere Anweisungen angeben. 
+        Gilt nur für diesen HTML-Tag! Daher eher selten/nicht verwenden. -->
+   <h1 style="color: blue; font-size: 40px; text-align: center; margin: 40px;">Mine Übrschrift</h1>
+   <h1>Mine andre Übrschrift</h1>
+
+   <p>lorem lorem</p>
+   <p>lorem lorem</p>
+   <p>lorem lorem</p>
+   <p style="color: aqua;">lorem lorem</p>
+   <p>lorem lorem</p>
+   <p>lorem lorem</p>
+   <p>lorem lorem</p>
+   <p>lorem lorem</p>
+
+   <!-- Internal -->
+   <style>
+    /* CSS-Kommentar */
+    /*
+      Kann auch mehrzeilig sein.
+      CSS wird von oben nach unten abgearbeitet. So können einzelne Styling's
+      überschrieben werden. Das kann gewollt oder ungewollt sein.
+    */
+    p {
+      color: orange;
+    }
+
+    h1 {
+      color: green;
+    }
+
+    p {
+      color: violet;
+    }
+
+   </style>
+
+</body>
+</html>

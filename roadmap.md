@@ -2,18 +2,18 @@
 
 ## HTML
 
-- Formulare
+- Forms - advanced (file / color / checkbox / radio / date(time) / 'dropdown')
 
 ## CSS
 
-- trennung inhalt / aussehen, ein stylesheet für n Seiten (Einhaltung CD)
-- inline / internal / external
+- rgba
+- Vererbung (font-family auf html), (specificy)
 - element-slektoren, ID, klasse
-- pseudoklassen (:link, :visited, :hover, first-XY)
+- pseudoklassen (:focus, :hover, last / first / nth child, first/last of type)
 - RGB / HEX / RGBA / HSL
-- Vererbung (specificy)
 - Sonstige Selektoren
 - Validierung - https://jigsaw.w3.org/css-validator/   Wenn mal was nicht läuft
+- Einehiten 
 
 ÜBUNGEN
 - Zuerst selbst etwas probieren
@@ -22,3 +22,7 @@
 
 - Box model - evil content-box
 - Flex / Grid
+
+
+## PHP 
+Kontaktformular entgegennehmen ❤️

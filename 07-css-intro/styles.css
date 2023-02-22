@@ -1,0 +1,22 @@
+/* Element-Selektoren für gleichnamige HTML-Elemente */
+h2 {
+  color: blue;
+  font-size: 40px;
+}
+
+/* CSS-Klassen zur Wiederverwendbarkeit. Starten mit einem Punkt '.'  */
+.green {
+  /* rgb() für RGB Darstellung verwenden */
+  color: rgb(0, 255, 0);
+
+  /* Oder die Hexadeximal-Variante (Hex) */
+  /* Groß / Kleinschreiben? Funktioniert beides, aber besser Kleinbuchstaben nehmen */
+  color: #00ff00; 
+
+  /* Oder Kurzvariante wenn beide Zahlen (0 - F) gleich sind */
+  color: #0f0;
+
+  font-size: 20px;
+}
+
+

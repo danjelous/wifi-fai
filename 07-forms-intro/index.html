@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>Formulare</h1>
+
+    <!-- action: Dahin werden die Formulardaten gesendet ('Unser Server') -->
+    <!-- method: Wie die Daten an den Server geschickt werden -->
+    <form action="" method="POST">
+
+      <!-- value: Wert des Input's initial setzen -->
+      <label for="vorname">Vorname</label>
+      <input type="text" id="vorname" value="Horst" /><br />
+
+      <!-- placeholder: Platzhalter für leeren Input -->
+      <label for="nachname">Nachname</label>
+      <input type="text" id="nachname" placeholder="Gib mir deinen Nachnamen" /><br />
+
+      <!-- disabled: User Eingabe deaktivieren -->
+      <label for="disabled">Eingeschränktes Feld</label>
+      <input type="text" name="" id="disabled" value="Nicht änderbar" disabled><br>
+
+      <!-- name: für Weiterverarbeitung am Server. id (und for) nur im HTML -->
+      <!-- required: Pflichtfeld -->
+      <label for="email">E-Mail</label>
+      <input type="email" name="email" id="email" required /><br />
+
+      <!-- min max als Grenzen für number -->
+      <label for="money">Geldspende</label>
+      <input type="number" name="" id="money" value="100" step="100" min="100" max="10000" /><br>
+
+      <!-- min/max length: Zeichenanzahl von Textfelder (type=text) begrenzen -->
+      <label for="plz">PLZ</label>
+      <input type="text" id="plz" required maxlength="4" placeholder="Format: 1234">
+
+      <label for="anliegen">Anliegen</label>
+      <textarea name="" id="anliegen" cols="50" rows="5"></textarea><br />
+
+      <!-- Reset-Button auskommentiert weil schlechte Usability -->
+      <!-- <button type="reset">Zurücksetzen</button> -->
+      <button type="submit">Abschicken!</button>
+    </form>
+
+    <h2>Alternative zum Kontaktformular</h2>
+
+    <!-- Theoretisch den E-Mail body URL-encoden...  -->
+    <a href="mailto:daniel@brunner.at?subject=Kontaktanfrage&body=Das ist mein Anliegen. Bitte Kreditkartennummer geben!">Schick mr a Mail!</a><br />
+
+    <!-- Schöner: tel: ohne leerzeichen: +436503000801 -->
+    <a href="tel:+43 650 / 3000 801">Ruaf mi a!</a>
+    <style>
+      input {
+        margin-bottom: 16px;
+        display: block;
+      }
+    </style>
+  </body>
+</html>
