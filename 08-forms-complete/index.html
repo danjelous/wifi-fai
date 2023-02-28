@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Last Part</title>
+  </head>
+  <body>
+    <style>
+      div {
+        margin-bottom: 20px;
+      }
+
+      /* Leider nicht stylebar :( */
+      option {
+        font-size: 100px;
+      }
+    </style>
+
+    <form action="#">
+
+      <!-- 
+          Dropdown (select): Eines aus Mehreren auswählen 
+          Werte in name und value werden an den Server gesendet
+      -->
+      <div>
+        <label for="select">Wähl was aus!</label>
+        <select name="auswahl" id="select">
+          <option value="option-1">Option 1</option>
+          <option value="option-2" selected>Option 2</option>
+          <option value="option-3" disabled>Option 3</option>
+        </select>
+      </div>
+
+      <h2>Snacks</h2>
+      <!-- 
+        name-Attribut sollte hier immer gleich sein. 
+        So 'wissen' die Inputs dass sie zusammengehören.
+      -->
+      <div>
+        <input type="checkbox" name="snacks" id="chips">
+        <label for="chips">Chips</label><br>
+
+        <input type="checkbox" name="snacks" id="getrocknete-apfelscheiben">
+        <label for="getrocknete-apfelscheiben">Getrocknete Apfelscheiben</label><br>
+
+        <input type="checkbox" name="snacks" id="insekten">
+        <label for="insekten">Insekten</label>
+      </div>
+
+      <h2>Lieblingsessen</h2>
+      <div>
+        <input type="radio" name="food" id="lasagne">
+        <label for="lasagne">Lasagne</label><br>
+
+        <input type="radio" name="food" id="pizza">
+        <label for="pizza">Pizza</label><br>
+
+        <input type="radio" name="food" id="spaghetti">
+        <label for="spaghetti">Spaghetti</label>
+      </div>
+
+      <div>
+        <label for="lebenslauf">Lebenslauf</label>
+        <input type="file" name="lebenslauf" id="lebenslauf" 
+               accept="application/pdf">
+      </div>
+
+      <!-- Checkbox: Hier nur Wahl aus ja/nein -->
+      <div>
+        <input type="checkbox" id="newsletter" />
+        <label for="newsletter">Bitte Newsletter abonnieren!</label>
+      </div>
+    </form>
+  </body>
+</html>

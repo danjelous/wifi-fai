@@ -2,27 +2,25 @@
 
 ## HTML
 
-- Forms - advanced (file / color / checkbox / radio / date(time) / 'dropdown')
+- Forms - advanced (color, date(time))
 
 ## CSS
 
-- rgba
-- Vererbung (font-family auf html), (specificy)
-- element-slektoren, ID, klasse
-- pseudoklassen (:focus, :hover, last / first / nth child, first/last of type)
-- RGB / HEX / RGBA / HSL
-- Sonstige Selektoren
+- Box model - evil content-box
+- Sonstige Selektoren (+ ~ > *)
 - Validierung - https://jigsaw.w3.org/css-validator/   Wenn mal was nicht läuft
-- Einehiten 
+- Einheiten - px vs rem 
+- wichtigste properties: position / display
+- CSS Animationen
 
 ÜBUNGEN
 - Zuerst selbst etwas probieren
   Style das, dies, ...
 - Boxen - positioning
-
-- Box model - evil content-box
 - Flex / Grid
 
 
 ## PHP 
-Kontaktformular entgegennehmen ❤️
+- Kontaktformular entgegennehmen ❤️
+- SQL Injections - sanitizing
+- HSC - escape all se stuff!

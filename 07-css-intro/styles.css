@@ -17,6 +17,9 @@ h2 {
   color: #0f0;
 
   font-size: 20px;
+
+  /* rgba - a für alpha: Deckkraft / Opacity mitgeben */
+  color: rgba(0, 255, 0, 0.5);
 }
 
 

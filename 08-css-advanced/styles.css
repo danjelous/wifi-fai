@@ -1,0 +1,76 @@
+html {
+  color: #00f;
+}
+
+h2 {
+  color: #0f0;
+}
+
+/* 
+ * CSS Klasse: beginnt mit einem Punkt - muss an HTML Elemente gehängt werden.
+ * Wird meistens verwendet - kann ich einmal im CSS definieren in beliebig oft 
+ * im HTML referenzieren mit class="XY"
+ */
+.red {
+  color: #f00;
+}
+
+/* 
+ * ID's beginnen mit einer Raute. Kann auch Nummern in Name verwenden. 
+ * Dürfen nur EINMAL PRO HTML FILE VORKOMMEN! Daher nur in Ausnahmen styling über ID's
+ */
+#heading3 {
+  color: #f0f;
+}
+
+/* 
+ * Naming mit mehr buchstaben: '-' (dash) für Leerzeichen und alles lowercase 
+ * !important überschreibt ALLES. Daher nicht verwenden, da ich sonst nichts a
+ * anderes mehr zuweisen kann (wird durch important immer überschrieben)
+ */
+.do-not-do-this {
+  color: #0ff !important;
+}
+
+/* ------------------------
+ * PSEUDO SELEKTOREN
+ * ------------------------ */
+
+ a {
+  color: violet;
+  text-decoration: none;
+  font-weight: bold;
+ }
+
+ /* Hover: Stylings werden nur angewendet wenn ich mit der Maus über einem Link (a) bin */
+ a:hover {
+  text-decoration: underline;
+  color: darkorchid;
+ }
+
+ /* Focus: Wenn der User etwas fokussiert mit Hinklicken oder 'reintabben' (Tab-Taste drücken) */
+ input:focus {
+  outline: 5px solid blue; 
+ }
+
+ol :first-child {
+  text-decoration: underline;
+}
+
+ol :last-child {
+  font-size: 20px;
+}
+
+/* Selektiert alle geraden children (start bei 0 an zu zählen) */
+ol :nth-child(even) {
+  background-color: grey;
+}
+
+ol :nth-child(odd) {
+  background-color: lightgrey;
+}
+
+/* Selektiere alle 3 Children (3n) ab dem Zweiten (Offset +2)  */
+ul :nth-child(3n + 2) {
+  background-color: #0f0;
+}
