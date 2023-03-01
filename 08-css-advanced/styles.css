@@ -36,22 +36,22 @@ h2 {
  * PSEUDO SELEKTOREN
  * ------------------------ */
 
- a {
+a {
   color: violet;
   text-decoration: none;
   font-weight: bold;
- }
+}
 
- /* Hover: Stylings werden nur angewendet wenn ich mit der Maus über einem Link (a) bin */
- a:hover {
+/* Hover: Stylings werden nur angewendet wenn ich mit der Maus über einem Link (a) bin */
+a:hover {
   text-decoration: underline;
   color: darkorchid;
- }
+}
 
- /* Focus: Wenn der User etwas fokussiert mit Hinklicken oder 'reintabben' (Tab-Taste drücken) */
- input:focus {
-  outline: 5px solid blue; 
- }
+/* Focus: Wenn der User etwas fokussiert mit Hinklicken oder 'reintabben' (Tab-Taste drücken) */
+input:focus {
+  outline: 5px solid blue;
+}
 
 ol :first-child {
   text-decoration: underline;
@@ -73,4 +73,25 @@ ol :nth-child(odd) {
 /* Selektiere alle 3 Children (3n) ab dem Zweiten (Offset +2)  */
 ul :nth-child(3n + 2) {
   background-color: #0f0;
+}
+
+/* General Selector - selektiert alles! */
+* {
+  /* Auskommentiert da es sonst alles grau machen würde... x.x */
+  /* color: darkgray; */
+}
+
+/* Adjacent Sibling Selector - Selektiert EIN p nach einem p auf gleicher Ebene */
+p + p {
+  color: red;
+}
+
+/* General Sibling Selector - Selektiert ALLE p's nach einem p auf gleicher Ebene */
+p ~ p {
+  color: green;
+}
+
+/* Direct Child Selector - Selektiert nur direkte Kinder (eine Einrückung), keine verschachtelten */
+.main-list > li {
+  background-color: #0ff;
 }

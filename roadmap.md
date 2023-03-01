@@ -2,25 +2,23 @@
 
 ## HTML
 
-- Forms - advanced (color, date(time))
+- Forms - advanced (color, date(time), month, search, )
 
 ## CSS
 
-- Box model - evil content-box
-- Sonstige Selektoren (+ ~ > *)
-- Validierung - https://jigsaw.w3.org/css-validator/   Wenn mal was nicht läuft
-- Einheiten - px vs rem 
-- wichtigste properties: position / display
-- CSS Animationen
+- wichtigste properties: display
+- Eigene Website mit CSS
+- CSS Variablen
 
-ÜBUNGEN
-- Zuerst selbst etwas probieren
-  Style das, dies, ...
-- Boxen - positioning
+## Übungen
+
 - Flex / Grid
+  - Nav selber machen
+- Webseite 2.0?
+- Wordpress?
+- Eigenes 'Hosting' mit Filezilla?
 
+## PHP
 
-## PHP 
 - Kontaktformular entgegennehmen ❤️
 - SQL Injections - sanitizing
-- HSC - escape all se stuff!

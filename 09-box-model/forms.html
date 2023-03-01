@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weitere Form-Elemente</title>
+</head>
+<body>
+
+  <style>
+    form div {
+      margin: 15px;
+    }
+  </style>
+
+  <h2>Folgende Input-Elemente sind <strong>stark</strong> Browser-abhängig!</h2>
+  <form action="">
+
+    <div>
+      <label for="color">Wähle deine Lieblingsfarbe!</label>
+      <input type="color" name="color" id="color">
+    </div>
+
+    <!-- Mit dem setzen von value= wird ein Wert vordefiniert -->
+    <div>
+      <label for="geburtsdatum">Geburtstag wählen</label>
+      <input type="date" name="dob" id="geburtsdatum" value="1993-12-31">
+    </div>
+
+    <div>
+      <label for="lieblingszeit">Wann ist Feierabend?</label>
+      <input type="time" name="lieblingszeit" id="lieblingszeit" value="17:01:01">
+    </div>
+
+    <div>
+      <label for="geburtstag-genau">Geburtstag mit Zeit</label>
+      <input type="datetime-local" name="dateundtime" id="geburtstag-genau" value="1993-12-31T04:14:44">
+    </div>
+
+    <div>
+      <label for="fav-month">Lieblingsmonat?</label>
+      <input type="month" name="fav-monat" id="fav-month" value="2022-06">
+    </div>
+
+    <div>
+      <label for="password">Din Passwort:</label>
+      <input type="password" name="password" id="password" minlength="5">
+    </div>
+
+  </form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* Umstellung von Standard Müll-Modell (content-box) auf vorhersehbare border-box */
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+/* Nur für mich (Beamer) */
+body {
+  padding-bottom: 1000px;
+}
+
+.parent {
+  border: 5px solid red;
+  width: 300px;
+  height: 300px;
+}
+
+.child {
+  width: 100%;
+  border: 5px solid blue;
+  padding: 20px;
+  margin: 20px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border: 2px dotted orange;
+}
+
+.box1 {
+  position: sticky;
+  top: 0;
+}
+
+.box2 {
+  /* Element wird aus dem Dokumentenfluss entfernt und manuell positioniert */
+  position: absolute;
+  left: 20%; /* manuell ausrichten mit top, right, bottom, left Properties */
+  top: 50%;
+}
+
+.box3 {
+  position: fixed;
+  right: 0; /* Rechts im Eck des Bildschirms positionieren */
+  bottom: 0;
+}
+
+.box4 {
+  /* Standardverhalten: Positionierung im Document Flow */
+  position: static;
+}
+
+.box5 {
+  /* position: relative in Kombination mit abosluter Positionierung */
+  position: relative;
+}
+
+.border {
+  border: 5px solid royalblue;
+}
