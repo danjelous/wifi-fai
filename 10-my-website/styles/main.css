@@ -1,0 +1,55 @@
+/* Mit beistrich mehrere Selektoren gruppieren */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 'Fremde' Schriftart definiere das es sie gibt */
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Regular.ttf');
+}
+
+html {
+  /* 
+   * Web safe fonts: https://www.w3schools.com/cssref/css_websafe_fonts.php
+   * sind in jedem Browser verfügbar 
+   */
+  /* font-family: 'Trebuchet MS'; */
+
+  /* Fremde/Eigene Schriftart zuweisen */
+  font-family: 'Roboto';
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: all 300ms ease; /* Farb-Übergang animieren */
+  border-bottom: 2px solid transparent; /* 'Hack' für Springen bei hover */
+}
+
+a:hover {
+  color: #34495E;
+  border-bottom: 2px solid #34495E;
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* Auf X-Achse zentriert */
+  background-color: #1ABC9C;
+  padding: 25px;
+}
+
+nav a {
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 3px;
+  font-weight: 700;
+
+  /* Kurzschreibweisen:
+  margin: 25px; Für alle vier Richtungen margin gleichzeitig angeben 
+  margin: 0 25px 0 25px; /* Kann auch alle vier Werte separat angeben 
+  margin: 0 25px; 
+  */
+}
