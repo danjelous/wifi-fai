@@ -2,13 +2,13 @@
 
 ## CSS
 
+- Next ones:
+
 - CSS Variablen
 - Resp. WD
-  - MQ's
-  - Container
-  - resp. images
-  - favicon?
   - media print
+- section, anchor (smooth) scrolling
+- navbar fixed
 
 ## Übungen
 

@@ -4,27 +4,82 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Diese Favicon Varianten können in einen eigenen Ordner verschoben werden -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+
+    <!-- Diese paar Files im Root behalten - Browser suchen danach! -->
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
     <title>Startseite</title>
 
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <nav>
-      <a href="index.html">Startseite</a>
-      <a href="ueber-uns.html">Über uns</a>
-      <a href="kontakt.html">Kontakt</a>
+    <nav class="nav-top">
+      <a href="index.html">
+        <img src="images/claim.png" alt="DEB Claim" />
+      </a>
+
+      <div>
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
     </nav>
 
     <!-- Hauptteil -->
-    <main>
-      <h1>Hello there!</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus, iure laudantium, autem quo dolorem magnam consequuntur commodi sapiente inventore maxime. Laborum quo ipsa a deleniti minima suscipit. Quia, vel?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus, iure laudantium, autem quo dolorem magnam consequuntur commodi sapiente inventore maxime. Laborum quo ipsa a deleniti minima suscipit. Quia, vel?</p>
+    <main class="container">
+      <section>
+        <h1>Hello there!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus,
+          iure laudantium, autem quo dolorem magnam consequuntur commodi
+          sapiente inventore maxime. Laborum quo ipsa a deleniti minima
+          suscipit. Quia, vel?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus,
+          iure laudantium, autem quo dolorem magnam consequuntur commodi
+          sapiente inventore maxime. Laborum quo ipsa a deleniti minima
+          suscipit. Quia, vel?
+        </p>
+      </section>
+
+      <section>
+        <div class="img-box">
+          <img src="images/mountains.jpg" alt="Wunderschönes Bild von Bergen." />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ea
+            magni necessitatibus ad assumenda, autem rem. Labore exercitationem
+            sint sapiente non, distinctio quos, doloremque quam minus laborum
+            consectetur repellendus. Dolore.
+          </p>
+        </div>
+      </section>
       <!-- Content kommt... -->
     </main>
 
     <footer>
-      <nav>
+      <nav class="nav-bot">
         <a href="datenschutz.html">Datenschutz</a>
         <a href="impressum.html">Impressum</a>
       </nav>

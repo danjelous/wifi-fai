@@ -1,3 +1,12 @@
+/* Box reset */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 /* Mit beistrich mehrere Selektoren gruppieren */
 html,
 body {
@@ -8,7 +17,7 @@ body {
 /* 'Fremde' Schriftart definiere das es sie gibt */
 @font-face {
   font-family: 'Roboto';
-  src: url('fonts/Roboto-Regular.ttf');
+  src: url('../fonts/Roboto-Regular.ttf');
 }
 
 html {
@@ -20,6 +29,10 @@ html {
 
   /* Fremde/Eigene Schriftart zuweisen */
   font-family: 'Roboto';
+}
+
+section {
+  padding: 30px 0;
 }
 
 a {
@@ -36,9 +49,18 @@ a:hover {
 
 nav {
   display: flex;
-  justify-content: center; /* Auf X-Achse zentriert */
   background-color: #1ABC9C;
   padding: 25px;
+  /* background: url('../images/claim.png'); Mit ../ aus den styles ordner hinauf und dann in den images ordner */
+}
+
+.nav-top {
+  justify-content: space-between;
+  align-items: center; /* Auf Y-Achse zentrieren */
+}
+
+.nav-bot {
+  justify-content: center; /* Auf X-Achse zentriert */
 }
 
 nav a {
@@ -52,4 +74,50 @@ nav a {
   margin: 0 25px 0 25px; /* Kann auch alle vier Werte separat angeben 
   margin: 0 25px; 
   */
+}
+
+nav img {
+  height: 25px;
+}
+
+.container {
+  padding: 0 10px;
+  max-width: 960px;
+  margin: 0 auto; /* block-Element zentrieren */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#curved {
+  display: none;
+}
+
+/* Media Query */
+@media (min-width: 600px) {
+  /* Alles in dieser Klammer wird ab 600px Bildschrimbreite angewendet */
+
+  .img-box {
+    display: flex;
+  }
+  
+  .img-box :first-child {
+    /* Image */
+    width: 49%;
+  }
+  
+  .img-box :last-child {
+    /* Text */
+    width: 49%;
+    margin: 0;
+    margin-left: 2%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 25px;
+  }
 }
