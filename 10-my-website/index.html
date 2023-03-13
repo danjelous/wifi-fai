@@ -34,32 +34,28 @@
 
     <link rel="stylesheet" href="styles/main.css" />
   </head>
+
   <body>
+
+    <aside id="ads">
+      <img src="images/ads/logo-claimed.png" alt="Bezahlte Werbeanzeige der Destillerie Brunner.">
+      <p>Hier steht ein wahnsinnig reißender Werbespruch.</p>
+      <a href="#" class="btn">Zum Shop</a>
+    </aside>
+
     <nav class="nav-top">
-      <a href="#" class="no-border">
+      <a href="#">
         <img src="images/claim.png" alt="DEB Claim" />
       </a>
-
+      
       <div>
-        <a href="#about">Über uns</a>
-        <a href="#contact">Kontakt</a>
+        <a href="#about" class="link">Über uns</a>
+        <a href="#contact" class="link">Kontakt</a>
       </div>
     </nav>
 
     <!-- Hauptteil -->
     <main class="container">
-      <!-- <style>
-        @keyframes blink {
-          from { opacity: 1; }
-          to { opacity: 0;}
-        }
-
-        .blink {
-          animation-name: blink;
-          animation-duration: 2s;
-        }
-      </style> -->
-      <!-- <h1 class="blink">yo!</h1> -->
       <section>
         <h1>Hello there!</h1>
         <p>
@@ -76,15 +72,47 @@
         </p>
       </section>
 
-      <section>
+      <section id="blog">
+        <h2>Blog</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus,
+          iure laudantium, autem quo dolorem magnam consequuntur commodi
+          sapiente inventore maxime. Laborum quo ipsa a deleniti minima
+          suscipit. Quia, vel?
+        </p>
+
         <div class="img-box">
           <img src="images/mountains.jpg" alt="Wunderschönes Bild von Bergen." />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ea
-            magni necessitatibus ad assumenda, autem rem. Labore exercitationem
-            sint sapiente non, distinctio quos, doloremque quam minus laborum
-            consectetur repellendus. Dolore.
-          </p>
+          <div class="img-box-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ea
+              magni necessitatibus ad assumenda, autem rem. Labore exercitationem
+              sint sapiente non, distinctio quos.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ea
+              magni necessitatibus ad assumenda, autem rem. Labore exercitationem
+              sint sapiente non, distinctio quos.
+            </p>
+            <a href="#" class="btn large">Zum Artikel</a>
+          </div>
+        </div>
+
+        <div class="img-box img-right">
+          <img src="images/mountains.jpg" alt="Wunderschönes Bild von Bergen." />
+          <div class="img-box-text">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ea
+              magni necessitatibus ad assumenda, autem rem. Labore exercitationem
+              sint sapiente non, distinctio quos.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ea
+              magni necessitatibus ad assumenda, autem rem. Labore exercitationem
+              sint sapiente non, distinctio quos.
+            </p>
+            <a href="#" class="btn large">Zum Artikel</a>
+          </div>
         </div>
       </section>
 
@@ -100,7 +128,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus, iure laudantium, autem quo dolorem magnam consequuntur commodi sapiente inventore maxime. Laborum quo ipsa a deleniti minima suscipit. Quia, vel?</p>
 
         <h2>Anfahrt</h2>
-        <a href="https://www.google.at/maps/@47.4159842,9.7398001,17.78z">Anfahrt via Google Maps</a>
+        <a class="link" href="https://www.google.at/maps/@47.4159842,9.7398001,17.78z">Anfahrt via Google Maps</a>
         <br>
         <br>
 
@@ -108,8 +136,6 @@
           <img src="images/anfahrt.png" alt="Anfahrt zum WIFI, Google Maps">
         </a>
       </section>
-
-
     </main>
 
     <footer>

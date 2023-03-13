@@ -3,21 +3,12 @@
 ## CSS
 
 - Next ones:
-
-- konatkt gmaps
-- werbebanner area
-- slider 
-
-
 - CSS Variablen
-- Resp. WD
-  - media print
-- section, anchor (smooth) scrolling
-- navbar fixed
+- media print
 
 ## Übungen
 
-- Wordpress?
+- Wordpress? - Am SA-Block
 - Eigenes 'Hosting' mit Filezilla?
 
 ## PHP
