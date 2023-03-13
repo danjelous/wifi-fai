@@ -1,6 +1,7 @@
 /* Box reset */
 html {
   box-sizing: border-box;
+
 }
 
 *, *::before, *::after {
@@ -32,7 +33,7 @@ html {
 }
 
 section {
-  padding: 30px 0;
+  padding: 60px 0;
 }
 
 a {
@@ -47,16 +48,22 @@ a:hover {
   border-bottom: 2px solid #34495E;
 }
 
+.no-border:hover {
+  border-bottom: 2px solid transparent;
+}
+
 nav {
   display: flex;
   background-color: #1ABC9C;
-  padding: 25px;
+  padding: 15px;
   /* background: url('../images/claim.png'); Mit ../ aus den styles ordner hinauf und dann in den images ordner */
 }
 
 .nav-top {
   justify-content: space-between;
   align-items: center; /* Auf Y-Achse zentrieren */
+  position: sticky; /* Navbar an Oberkante vom Browser fixieren */
+  top: 0;
 }
 
 .nav-bot {
@@ -119,5 +126,15 @@ img {
 @media (min-width: 768px) {
   .container {
     padding: 0 25px;
+  }
+}
+
+
+/* Dieses Media Query (MQ) wird nur angewendet wenn 
+ * der User das nicht abgeschaltet hat (Systemeinstellungen) 
+ */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth; /* Smooth scrolling für das ganze HTML setzen */
   }
 }

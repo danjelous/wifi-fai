@@ -4,6 +4,11 @@
 
 - Next ones:
 
+- konatkt gmaps
+- werbebanner area
+- slider 
+
+
 - CSS Variablen
 - Resp. WD
   - media print

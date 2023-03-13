@@ -36,18 +36,30 @@
   </head>
   <body>
     <nav class="nav-top">
-      <a href="index.html">
+      <a href="#" class="no-border">
         <img src="images/claim.png" alt="DEB Claim" />
       </a>
 
       <div>
-        <a href="ueber-uns.html">Über uns</a>
-        <a href="kontakt.html">Kontakt</a>
+        <a href="#about">Über uns</a>
+        <a href="#contact">Kontakt</a>
       </div>
     </nav>
 
     <!-- Hauptteil -->
     <main class="container">
+      <!-- <style>
+        @keyframes blink {
+          from { opacity: 1; }
+          to { opacity: 0;}
+        }
+
+        .blink {
+          animation-name: blink;
+          animation-duration: 2s;
+        }
+      </style> -->
+      <!-- <h1 class="blink">yo!</h1> -->
       <section>
         <h1>Hello there!</h1>
         <p>
@@ -75,7 +87,29 @@
           </p>
         </div>
       </section>
-      <!-- Content kommt... -->
+
+      <section id="about">
+        <h2>Über uns!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus, iure laudantium, autem quo dolorem magnam consequuntur commodi sapiente inventore maxime. Laborum quo ipsa a deleniti minima suscipit. Quia, vel?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus, iure laudantium, autem quo dolorem magnam consequuntur commodi sapiente inventore maxime. Laborum quo ipsa a deleniti minima suscipit. Quia, vel?</p>
+      </section>
+
+      <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus, iure laudantium, autem quo dolorem magnam consequuntur commodi sapiente inventore maxime. Laborum quo ipsa a deleniti minima suscipit. Quia, vel?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus, iure laudantium, autem quo dolorem magnam consequuntur commodi sapiente inventore maxime. Laborum quo ipsa a deleniti minima suscipit. Quia, vel?</p>
+
+        <h2>Anfahrt</h2>
+        <a href="https://www.google.at/maps/@47.4159842,9.7398001,17.78z">Anfahrt via Google Maps</a>
+        <br>
+        <br>
+
+        <a href="https://www.google.at/maps/@47.4159842,9.7398001,17.78z" class="no-border">
+          <img src="images/anfahrt.png" alt="Anfahrt zum WIFI, Google Maps">
+        </a>
+      </section>
+
+
     </main>
 
     <footer>
