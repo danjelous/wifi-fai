@@ -7,7 +7,7 @@ html {
   box-sizing: inherit;
 }
 
-/* Mit beistrich mehrere Selektoren gruppieren */
+/* Mit Beistrich mehrere Selektoren gruppieren */
 html,
 body {
   margin: 0;
@@ -30,6 +30,7 @@ html {
   /* Fremde/Eigene Schriftart zuweisen */
   font-family: 'Roboto';
   color: #0D0907;
+  background-color: rgb(243, 243, 243);
 }
 
 section {
@@ -41,6 +42,7 @@ a {
 }
 
 .link {
+  cursor: pointer;
   font-weight: 700; /* Fett */
   color: #000;
   transition: all 300ms ease; /* Farb-Übergang animieren */
@@ -80,20 +82,25 @@ a {
 }
 
 nav {
-  display: flex;
   background-color: #1ABC9C;
   padding: 15px;
   /* background: url('../images/claim.png'); Mit ../ aus den styles ordner hinauf und dann in den images ordner */
 }
 
 .nav-top {
-  justify-content: space-between;
-  align-items: center; /* Auf Y-Achse zentrieren */
   position: sticky; /* Navbar an Oberkante vom Browser fixieren */
   top: 0;
 }
 
+.nav-top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Auf Y-Achse zentrieren */
+}
+
 .nav-bot {
+  padding: 25px 0;
+  display: flex;
   justify-content: center; /* Auf X-Achse zentriert */
 }
 
@@ -127,6 +134,32 @@ img {
 
 .img-box + .img-box {
   margin-top: 30px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: -10px;
+  top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(243, 243, 243);
+  border: 1px solid #34495E;
+}
+
+.dropdown-content .link {
+  margin-top: 5px;
+  margin-bottom: 5px;
+} 
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* CSS Animation - Definieren */

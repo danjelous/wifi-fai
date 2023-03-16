@@ -1,0 +1,14 @@
+@media print {
+    html {
+      color: #000;
+    }
+  
+    #ads,
+    .nav-top {
+      display: none;
+    }
+  
+    section {
+      padding: 20px 0;
+    }
+  }

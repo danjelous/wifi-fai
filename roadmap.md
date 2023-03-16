@@ -3,13 +3,15 @@
 ## CSS
 
 - Next ones:
-- CSS Variablen
-- media print
+- CSS Variablen - scss - problem, wieso?
+- Lighthouse - Wie schnell ist eine WEbsite? Was kann ich optimieren?
 
 ## Übungen
 
 - Wordpress? - Am SA-Block
-- Eigenes 'Hosting' mit Filezilla?
+- Eigenes 'Hosting' mit Filezilla? - MI
+  > Was gibt es alles zu beachten? Versch. Anbieter? Preis? Pakte (Mail / SSL / ... )
+- MO : JavaScript Intro
 
 ## PHP
 

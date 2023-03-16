@@ -33,24 +33,37 @@
     <title>Startseite</title>
 
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/print.css" />
   </head>
 
   <body>
-
     <aside id="ads">
-      <img src="images/ads/logo-claimed.png" alt="Bezahlte Werbeanzeige der Destillerie Brunner.">
+      <img
+        src="images/ads/logo-claimed.png"
+        alt="Bezahlte Werbeanzeige der Destillerie Brunner."
+      />
       <p>Hier steht ein wahnsinnig reißender Werbespruch.</p>
       <a href="#" class="btn">Zum Shop</a>
     </aside>
 
     <nav class="nav-top">
-      <a href="#">
-        <img src="images/claim.png" alt="DEB Claim" />
-      </a>
-      
-      <div>
-        <a href="#about" class="link">Über uns</a>
-        <a href="#contact" class="link">Kontakt</a>
+      <div class="container">
+        <a href="#" aria-label="Link zur Startseite">
+          <img src="images/claim.png" alt="DEB Claim" />
+        </a>
+
+        <div>
+          <a href="#about" class="link">Über uns</a>
+          <a href="#contact" class="link">Kontakt</a>
+          <span class="dropdown">
+            <span class="dropdown-trigger link">Menü</span>
+            <div class="dropdown-content">
+              <a href="#about" class="link">Pizza</a>
+              <a href="#about" class="link">Pasta</a>
+              <a href="#about" class="link">Bier</a>
+            </div>
+          </span>
+        </div>
       </div>
     </nav>
 
@@ -82,34 +95,40 @@
         </p>
 
         <div class="img-box">
-          <img src="images/mountains.jpg" alt="Wunderschönes Bild von Bergen." />
+          <img
+            src="images/mountains.jpg"
+            alt="Wunderschönes Bild von Bergen."
+          />
           <div class="img-box-text">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ea
-              magni necessitatibus ad assumenda, autem rem. Labore exercitationem
-              sint sapiente non, distinctio quos.
+              magni necessitatibus ad assumenda, autem rem. Labore
+              exercitationem sint sapiente non, distinctio quos.
             </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ea
-              magni necessitatibus ad assumenda, autem rem. Labore exercitationem
-              sint sapiente non, distinctio quos.
+              magni necessitatibus ad assumenda, autem rem. Labore
+              exercitationem sint sapiente non, distinctio quos.
             </p>
             <a href="#" class="btn large">Zum Artikel</a>
           </div>
         </div>
 
         <div class="img-box img-right">
-          <img src="images/mountains.jpg" alt="Wunderschönes Bild von Bergen." />
+          <img
+            src="images/mountains.jpg"
+            alt="Wunderschönes Bild von Bergen."
+          />
           <div class="img-box-text">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ea
-              magni necessitatibus ad assumenda, autem rem. Labore exercitationem
-              sint sapiente non, distinctio quos.
+              magni necessitatibus ad assumenda, autem rem. Labore
+              exercitationem sint sapiente non, distinctio quos.
             </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ea
-              magni necessitatibus ad assumenda, autem rem. Labore exercitationem
-              sint sapiente non, distinctio quos.
+              magni necessitatibus ad assumenda, autem rem. Labore
+              exercitationem sint sapiente non, distinctio quos.
             </p>
             <a href="#" class="btn large">Zum Artikel</a>
           </div>
@@ -118,30 +137,60 @@
 
       <section id="about">
         <h2>Über uns!</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus, iure laudantium, autem quo dolorem magnam consequuntur commodi sapiente inventore maxime. Laborum quo ipsa a deleniti minima suscipit. Quia, vel?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus, iure laudantium, autem quo dolorem magnam consequuntur commodi sapiente inventore maxime. Laborum quo ipsa a deleniti minima suscipit. Quia, vel?</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus,
+          iure laudantium, autem quo dolorem magnam consequuntur commodi
+          sapiente inventore maxime. Laborum quo ipsa a deleniti minima
+          suscipit. Quia, vel?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus,
+          iure laudantium, autem quo dolorem magnam consequuntur commodi
+          sapiente inventore maxime. Laborum quo ipsa a deleniti minima
+          suscipit. Quia, vel?
+        </p>
       </section>
 
       <section id="contact">
         <h2>Kontakt</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus, iure laudantium, autem quo dolorem magnam consequuntur commodi sapiente inventore maxime. Laborum quo ipsa a deleniti minima suscipit. Quia, vel?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus, iure laudantium, autem quo dolorem magnam consequuntur commodi sapiente inventore maxime. Laborum quo ipsa a deleniti minima suscipit. Quia, vel?</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus,
+          iure laudantium, autem quo dolorem magnam consequuntur commodi
+          sapiente inventore maxime. Laborum quo ipsa a deleniti minima
+          suscipit. Quia, vel?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus,
+          iure laudantium, autem quo dolorem magnam consequuntur commodi
+          sapiente inventore maxime. Laborum quo ipsa a deleniti minima
+          suscipit. Quia, vel?
+        </p>
 
         <h2>Anfahrt</h2>
-        <a class="link" href="https://www.google.at/maps/@47.4159842,9.7398001,17.78z">Anfahrt via Google Maps</a>
-        <br>
-        <br>
+        <a
+          class="link"
+          href="https://www.google.at/maps/@47.4159842,9.7398001,17.78z"
+          >Anfahrt via Google Maps</a
+        >
+        <br />
+        <br />
 
-        <a href="https://www.google.at/maps/@47.4159842,9.7398001,17.78z" class="no-border">
-          <img src="images/anfahrt.png" alt="Anfahrt zum WIFI, Google Maps">
+        <a
+          href="https://www.google.at/maps/@47.4159842,9.7398001,17.78z"
+          class="no-border"
+          aria-label="Google Maps Link zur Anfahrt."
+        >
+          <img src="images/anfahrt.png" alt="Anfahrt zum WIFI, Google Maps" />
         </a>
       </section>
     </main>
 
     <footer>
       <nav class="nav-bot">
-        <a href="datenschutz.html">Datenschutz</a>
-        <a href="impressum.html">Impressum</a>
+        <div class="container">
+          <a href="datenschutz.html" class="link">Datenschutz</a>
+          <a href="impressum.html" class="link">Impressum</a>
+        </div>
       </nav>
     </footer>
   </body>
