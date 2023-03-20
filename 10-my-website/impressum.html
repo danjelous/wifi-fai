@@ -6,37 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Impressum</title>
 
+    <link rel="stylesheet" href="styles/nav.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/print.css" />
   </head>
   <body>
-    <nav>
-      <a href="index.html">Startseite</a>
-      <a href="ueber-uns.html">Über uns</a>
-      <a href="kontakt.html">Kontakt</a>
+    <!-- Mobile Navigation: Hamburger -->
+    <div class="hamburger-wrapper">
+      <label>
+        <input type="checkbox" />
+        <span class="menu"> <span class="hamburger"></span> </span>
+        <ul>
+          <li><a class="link" href="index.html#">Startseite</a></li>
+          <li><a class="link" href="index.html#about">Über uns</a></li>
+          <li><a class="link" href="index.html#contact">Kontakt</a></li>
+        </ul>
+      </label>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-top nav-desktop">
+      <div class="container">
+        <a href="index.html">
+          <img src="images/claim.png" alt="DEB Claim" />
+        </a>
+
+        <div>
+          <a href="#about" class="link">Über uns</a>
+          <a href="#contact" class="link">Kontakt</a>
+          <span class="dropdown">
+            <span class="dropdown-trigger link">Menü</span>
+            <div class="dropdown-content">
+              <a href="#about" class="link">Pizza</a>
+              <a href="#about" class="link">Pasta</a>
+              <a href="#about" class="link">Bier</a>
+            </div>
+          </span>
+        </div>
+      </div>
     </nav>
 
     <!-- Hauptteil -->
     <main>
-      <h1>Impressum!</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus,
-        iure laudantium, autem quo dolorem magnam consequuntur commodi sapiente
-        inventore maxime. Laborum quo ipsa a deleniti minima suscipit. Quia,
-        vel?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus,
-        iure laudantium, autem quo dolorem magnam consequuntur commodi sapiente
-        inventore maxime. Laborum quo ipsa a deleniti minima suscipit. Quia,
-        vel?
-      </p>
-      <!-- Content kommt... -->
+      <div class="container">
+        <h1>Impressum!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus,
+          iure laudantium, autem quo dolorem magnam consequuntur commodi
+          sapiente inventore maxime. Laborum quo ipsa a deleniti minima
+          suscipit. Quia, vel?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus,
+          iure laudantium, autem quo dolorem magnam consequuntur commodi
+          sapiente inventore maxime. Laborum quo ipsa a deleniti minima
+          suscipit. Quia, vel?
+        </p>
+        <!-- Content kommt... -->
+      </div>
     </main>
 
     <footer>
-      <nav>
-        <a href="datenschutz.html">Datenschutz</a>
-        <a href="impressum.html">Impressum</a>
+      <nav class="nav-bot">
+        <div class="container">
+          <a href="datenschutz.html" class="link">Datenschutz</a>
+          <a href="impressum.html" class="link">Impressum</a>
+        </div>
       </nav>
     </footer>
   </body>

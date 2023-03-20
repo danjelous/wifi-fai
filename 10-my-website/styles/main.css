@@ -212,8 +212,9 @@ img {
 }
 
 
-/* Dieses Media Query (MQ) wird nur angewendet wenn 
- * der User das nicht abgeschaltet hat (Systemeinstellungen) 
+/* 
+ * Dieses Media Query (MQ) wird nur angewendet wenn der User 
+ * 'Bewegung reduzieren" (o.Ä; je nach OS) in seinen Systemeinstellungen nicht abgeschaltet hat.
  */
 @media (prefers-reduced-motion: no-preference) {
   html {

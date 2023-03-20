@@ -1,0 +1,120 @@
+/* Hamburger Start */
+/* Inspired by https://codepen.io/alvarotrigo/pen/ExwgbZv */
+.hamburger-wrapper .menu {
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+  cursor: pointer;
+}
+
+.hamburger-wrapper .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: #69d2e7;
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburger-wrapper .hamburger:after,
+.hamburger-wrapper .hamburger:before {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #69d2e7;
+}
+
+.hamburger-wrapper .hamburger:before {
+  top: -10px;
+}
+
+.hamburger-wrapper .hamburger:after {
+  bottom: -10px;
+}
+
+.hamburger-wrapper input {
+  display: none;
+}
+
+.hamburger-wrapper input:checked + .menu {
+  box-shadow: 0 0 0 100vw #fff, 0 0 0 100vh #fff;
+  border-radius: 0;
+}
+
+.hamburger-wrapper input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hamburger-wrapper input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+.hamburger-wrapper input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+}
+
+.hamburger-wrapper input:checked + .menu + ul {
+  opacity: 1;
+}
+
+.hamburger-wrapper ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: 0.25s 0s ease-in-out;
+  transition: 0.25s 0s ease-in-out;
+  list-style: none;
+}
+
+.hamburger-wrapper a {
+  margin-bottom: 1em;
+  display: block;
+  text-decoration: none;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+/* Hamburger Ende */
+
+main {
+  margin-top: 60px;
+}
+
+/* "Umschalten" auf Desktop */
+@media (min-width: 1024px) {
+  .hamburger-wrapper {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: block;
+  }
+}

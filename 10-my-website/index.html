@@ -32,6 +32,7 @@
 
     <title>Startseite</title>
 
+    <link rel="stylesheet" href="styles/nav.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/print.css" />
   </head>
@@ -46,9 +47,23 @@
       <a href="#" class="btn">Zum Shop</a>
     </aside>
 
-    <nav class="nav-top">
+    <!-- Mobile Navigation: Hamburger -->
+    <div class="hamburger-wrapper">
+      <label>
+        <input type="checkbox" />
+        <span class="menu"> <span class="hamburger"></span> </span>
+        <ul>
+          <li><a class="link" href="index.html#">Startseite</a></li>
+          <li><a class="link" href="index.html#about">Über uns</a></li>
+          <li><a class="link" href="index.html#contact">Kontakt</a></li>
+        </ul>
+      </label>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-top nav-desktop">
       <div class="container">
-        <a href="#" aria-label="Link zur Startseite">
+        <a href="index.html">
           <img src="images/claim.png" alt="DEB Claim" />
         </a>
 
