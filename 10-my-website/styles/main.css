@@ -62,6 +62,7 @@ a {
   background-color: #F39C12; /* Orange */
   border-radius: 5px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .btn:hover {

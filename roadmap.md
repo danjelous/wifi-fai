@@ -11,9 +11,9 @@
 - Wordpress? - Am SA-Block
 - Eigenes 'Hosting' mit Filezilla? - MI
   > Was gibt es alles zu beachten? Versch. Anbieter? Preis? Pakte (Mail / SSL / ... )
-- MO : JavaScript Intro
 
 ## PHP
 
+- Am MO
 - Kontaktformular entgegennehmen ❤️
 - SQL Injections - sanitizing
