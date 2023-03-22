@@ -1,0 +1,18 @@
+Webhosting Anbieter
+- Magenta
+- Drei
+- A1
+- AllInkl.
+- W4Y
+- easy dingsbums
+- vol.at 
+- Hetzner
+- IONOS
+- ...
+
+Worauf muss ich dabei achten?
+- Verfügbarkeit
+- Preis / Leistung
+- Funktionsumfang
+- Anbindung ("Speed" / Bandbreite / Durchsatz)
+- Standort (DSGVO - Cloud / On Premise)
