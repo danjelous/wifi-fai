@@ -1,0 +1,8 @@
+# Mit '#' Kommentare starten
+# Nachschlagen: https://www.redim.de/blog/passwortschutz-mit-htaccess-einrichten
+AuthType Basic
+AuthName "Passwortgeschützter Bereich"
+
+# Blöd: Brauche ABSOLUTEN Pfad. Meh. 
+AuthUserFile /homepages/40/d888422569/htdocs/fai/dabr/private/.htpasswd
+Require valid-user
