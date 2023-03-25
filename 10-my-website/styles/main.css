@@ -14,7 +14,7 @@ body {
   padding: 0;
 }
 
-/* 'Fremde' Schriftart definiere das es sie gibt */
+/* 'Fremde' Schriftart definiieren: Sage nur dass es sie gibt, weise noch nichts zu! */
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Regular.ttf');
@@ -69,19 +69,6 @@ a {
   background-color: #F1C40F; /* Sunflower */
 }
 
-#ads {
-  height: 100px;
-  background-color: gainsboro;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px; /* Abstand zwischen den einzelnen Children */
-}
-
-#ads img {
-  max-height: 100%; /* Bilder nur so hoch wie der Ads-Container, sonst fließen sie darüber hinaus! */
-}
-
 nav {
   background-color: #1ABC9C;
   padding: 15px;
@@ -91,6 +78,7 @@ nav {
 .nav-top {
   position: sticky; /* Navbar an Oberkante vom Browser fixieren */
   top: 0;
+  z-index: 1; /* Wenn mehrere Ebenen übereinander gehen mit z-index einstellen was oben/unten ist. Ganz unten ist 0 */
 }
 
 .nav-top .container {
@@ -131,6 +119,23 @@ nav img {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* -------------------- */
+/* END General stylings */
+/* -------------------- */
+
+#ads {
+  height: 100px;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Abstand zwischen den einzelnen Children */
+}
+
+#ads img {
+  max-height: 100%; /* Bilder nur so hoch wie der Ads-Container, sonst fließen sie darüber hinaus! */
 }
 
 .img-box + .img-box {
@@ -211,7 +216,6 @@ img {
     padding: 0 25px;
   }
 }
-
 
 /* 
  * Dieses Media Query (MQ) wird nur angewendet wenn der User 
