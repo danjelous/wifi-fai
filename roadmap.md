@@ -8,10 +8,6 @@
 
 ## Übungen
 
-- Wordpress? - Am SA-Block
-- Eigenes 'Hosting' mit Filezilla? - MI
-  > Was gibt es alles zu beachten? Versch. Anbieter? Preis? Pakte (Mail / SSL / ... )
-
 ## PHP
 
 - Am MO
