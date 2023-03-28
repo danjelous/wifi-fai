@@ -1,0 +1,11 @@
+html {
+  background-color: rgb(227, 217, 227);
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+}

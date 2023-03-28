@@ -9,7 +9,3 @@
 ## Übungen
 
 ## PHP
-
-- Am MO
-- Kontaktformular entgegennehmen ❤️
-- SQL Injections - sanitizing
