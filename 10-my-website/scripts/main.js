@@ -16,7 +16,7 @@ console.log(document.getElementById('ads'));
 
 // Statt nur ausgeben kann über JS auch HTML (und CSS) geändert werden
 // Hier setze ich das das CSS display-Property auf 'none'; blende es aus
-document.getElementById('ads').style.display = "none";
+// document.getElementById('ads').style.display = "none";
 
 // Neu/schöner: kann über document.querySelector besser selektieren
 console.log(document.querySelector("#ads"));      // ID
@@ -45,3 +45,22 @@ function appendImage() {
   image.setAttribute('src', 'images/mountains.jpg'); // src-Attribut setzen
   document.querySelector('body').appendChild(image); // image an body anhängen
 }
+
+function hideAds() {
+  // In LS ablegen dass ich ads nicht mehr sehen will
+  localStorage.setItem('hide-ads', true);
+
+  // Wirklich hiden
+  document.querySelector('#ads').style.display = 'none';
+}
+
+// Code in geschw. Klammern wird ausgeführt wenn unsere Seite geladen ist
+window.onload = () => {
+  // Prüfen ob ads angezeigt werden soll
+  const hideAds = localStorage.getItem('hide-ads');
+
+  // Wert wird als string abgelegt, daher Vergleich auf String
+  if (hideAds === 'true') {  // Kurzform: if(hideAds) { ... }
+    document.querySelector('#ads').style.display = 'none';
+  }
+};
